@@ -1,0 +1,24 @@
+{
+  "name": "dance_website",
+  "version": "1.0.0",
+  "description": "this is website for a popular dance acadmey",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lets",
+    "dance"
+  ],
+  "author": "sachin siddhu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.1",
+    "mongodb": "^6.0.0",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2"
+  }
+}

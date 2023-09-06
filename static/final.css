@@ -1,0 +1,138 @@
+body{
+    background-color: burlywood;
+}
+.submit {
+    background-color: blueviolet;
+    
+    width: 50vw;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 8px 8px 25px black;
+    align-items: center;
+    position: relative;
+    animation-name: sachin1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.c1 {background-color: blueviolet;
+    border-radius: 15px;
+    box-shadow: 8px 8px 25px black;
+    width: fit-content;
+    height: 4vw;
+  
+    animation-name: sachin2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.c2 {background-color: blueviolet;
+    border-radius: 15px;
+    box-shadow: 8px 8px 25px black;
+    width:fit-content;
+    height: 4vw;
+   
+    animation-name: sachin3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.c3 {background-color: blueviolet;
+    border-radius: 15px;
+    box-shadow: 8px 8px 25px black;
+    width: fit-content;
+    height: 4vw;
+    animation-name: sachin4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: relative;
+
+}
+
+.c4 {background-color: blueviolet;
+    border-radius: 15px;
+    box-shadow: 8px 8px 25px black;
+    width: fit-content;
+    height: 4vw;
+   
+    animation-name: sachin5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: relative;
+}
+
+p {
+    margin-left: 10px;
+}
+@media screen and (max-width: 800px){
+    .submit{
+    width: 50vw;
+    height: 40vw;}
+}
+@keyframes sachin1 {
+    0%{
+        top :0px;
+        left:0px}
+
+  100%{
+    top:24vw;
+    left:40vw;
+  }
+    
+}
+@keyframes sachin2 {
+    0%{
+        top :0px;
+        left:0px;}
+
+  100%{
+    top:30px;
+    left:40px;
+  }
+    
+}
+@keyframes sachin3 {
+    0%{
+        top :0px;
+        left:0px;}
+
+  100%{
+    top: -36px;
+    left:115px;
+  }
+    
+}
+@keyframes sachin4 {
+    0%{
+        top :0px;
+        left:0px;}
+
+  100%{
+    top:30px;
+    left:40px;
+  }
+    
+}
+@keyframes sachin5 {
+    0%{
+        top :0px;
+        left:0px;}
+
+  100%{
+    top:-36px;
+    left:115px;
+  }
+    
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&family=Rubik+Moonrocks&family=Smooch&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner';
+}
+
+#logo img {
+    width: 100px;
+
+
+}
+
+#navbar {
+    display: flex;
+
+
+    background-color: black;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    margin: 35px;
+
+}
+
+#navbar ul li a {
+    color: bisque;
+}
+
+#navbar li:hover {
+    transform: scale(2);
+}
+
+#introSection {
+    color: rgb(122, 67, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    align-items: center;
+    background: center/cover no-repeat url('/static/bg1.jpg');
+    height: 300px;
+    background-color: red;
+}
+
+#introSection div {
+    /* text-decoration:dashed; */
+
+    color: rgb(122, 67, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    background: center/cover no-repeat url('/static/bg1.jpg');
+    height: 300px;
+    background-color: red;
+}
+
+#objSection {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.cards {
+    color: darkorange;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7px;
+}
+
+.card1,
+.card2,
+.card3 {
+    border: 3px solid rgb(100, 90, 90);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 29px;
+    margin-left: 6px;
+    height: 200px;
+    width: 380px;
+
+
+}
+
+.card1 {
+    background: center/cover no-repeat url('/static/obj2.jpg');
+}
+
+.card2 {
+    background: center/cover no-repeat url('/static/obj1.jpg');
+}
+
+.card3 {
+    background: center/cover no-repeat url('/static/obj3.jpg');
+}
+
+#sponsorsSection {
+    height: 300px;
+
+    font-size: 1.9rem;
+}
+
+#sponsorsSection h2 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+
+
+}
+
+#sponsors {
+    height: 191px;
+
+    margin-left: 40px;
+    background: white;
+
+}
+
+.spImage {
+    background: black;
+    height: 130px;
+    margin-left: 40px;
+}
+
+#footer {
+
+    background-color: blueviolet;
+}
+
+.ftImage {
+    height: 220px;
+    width: 1250px;
+}
+
+h4 {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}

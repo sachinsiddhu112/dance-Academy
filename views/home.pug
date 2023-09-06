@@ -1,0 +1,37 @@
+extends base.pug
+
+block scripts 
+  script (src="/static/index.js")
+
+block style 
+  style 
+    include ../static/style.css  
+
+block content 
+  
+
+  section#introSection
+    div |The Dance Academy, established since October 1988 aims to provide students with a professional dance curriculum exposing them to well structured training programmes in the various dance disciplines. Students are encouraged to develop their dance skills and performance qualities to the maximum 
+       
+  section#objSection 
+    h3 |The main objective of the school is to nurture versatile dancers in a caring, dedicated and safe environment. 
+
+    div.cards
+      h2 Dance Objectives
+      div.card1 
+        p First and foremost, love the body you have.
+        p take care of it by eating right,drinking plenty of water, exercising and getting enough rest/sleep.
+               
+      div.card2 
+        p Increase one’s flexibility, strength, and control throughout the body by learning various techniques, style and characteristics of dance forms.
+      div.card3 
+        p To be encouraged to express and share personal creativity.
+        p Compose creative and expressive statements through the art of performance.    
+  section#sponsorsSection 
+    h2  Our Sponsors
+    div#sponsors
+      img(src="/static/audi.jpeg", alt="",class="spImage")
+      img(src="/static/gucci.jpeg", alt="",class="spImage")
+      img(src="/static/chanel.png", alt="",class="spImage")
+      img(src="/static/levis.png", alt="",class="spImage")
+      img(src="/static/nike.png", alt="",class="spImage")
