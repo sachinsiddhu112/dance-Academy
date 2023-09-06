@@ -42,18 +42,18 @@ app.set('views',path.join(__dirname,'views'))//set the views directory
 
 //END POINSTS
 app.get('/',(req,res)=>{
-    const params={};
-    res.status(200).render('home.pug',params);})
+    
+    res.status(200).render('home');})
  app.get('/info',(req,res)=>{
-    const params={};
-    res.status(200).render('info.pug',params);})
+    
+    res.status(200).render('info');})
     
 app.get('/contact',(req,res)=>{
-    const params={};
-    res.status(200).render('contact.pug',params);
+    
+    res.status(200).render('contact');
 })
 app.get("/class",(req,res)=>{
-    res.status(200).render('class.pug')
+    res.status(200).render('class')
 });
 
 
@@ -65,14 +65,14 @@ app.post('/contact',async (req,res)=>{
         email:req.body.email,
         address:req.body.address,
         desc:req.body.desc
-    })
-    // var myData=new Contact(req.body);
-    // myData.save().then(()=>{
+    }).then(()=>{
         res.status(200).render('submit.pug');
 
-    // }).catch(()=>{
-    //     res.status(400).send("the item is not saved in data base");
-    // })
+    }).catch(()=>{
+        res.status(400).send("the item is not saved in data base");
+    })
+    //  var myData=new Contact(req.body);
+    // // myData.save()
     
 })
 
