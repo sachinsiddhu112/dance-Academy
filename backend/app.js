@@ -38,27 +38,27 @@ app.use(express.urlencoded({extended: false}));//THIS IS FOR OBTAIN DATA FILLED 
 
 //PUG SPECIFIC STUFF
 app.set('view engine','pug')//set the template engine
-app.set('views',path.join(__dirname,'views'))//set the views directory
+app.set('./views',path.join(__dirname,'views'))//set the views directory
 
 //END POINSTS
-app.get('/',(req,res)=>{
+app.get('./',(req,res)=>{
     const params={};
     res.status(200).render('home.pug',params);})
- app.get('/info',(req,res)=>{
+ app.get('./info',(req,res)=>{
     const params={};
     res.status(200).render('info.pug',params);})
     
-app.get('/contact',(req,res)=>{
+app.get('./contact',(req,res)=>{
     const params={};
     res.status(200).render('contact.pug',params);
 })
-app.get("/class",(req,res)=>{
+app.get("./class",(req,res)=>{
     res.status(200).render('class.pug')
 });
 
 
 
-app.post('/contact',async (req,res)=>{
+app.post('./contact',async (req,res)=>{
     let user=await Contact.create({
         name:req.body.name,
         phone:req.body.phone,
