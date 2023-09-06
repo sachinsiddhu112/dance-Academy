@@ -32,7 +32,7 @@ mongoose.set('bufferCommands', false);
 mongodb();
 //EXPRESS SPECIFIC STUFFnod
 //app.use(express.static('static',option));//
-app.use('/static',express.static('static'));//THIS IS FOR SERVING STATIC FILE.
+app.use('./static',express.static('static'));//THIS IS FOR SERVING STATIC FILE.
 app.use(express.urlencoded({extended: false}));//THIS IS FOR OBTAIN DATA FILLED IN FORM
 
 
